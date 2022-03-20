@@ -8,6 +8,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -31,7 +32,7 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private Date birthday;
+    private SimpleDateFormat birthday;
     private String phoneNumber;
     private String career;
     private String mbti;
